@@ -45,3 +45,70 @@ group :development do
   gem 'spring'
 end
 
+
+gem 'administrate'
+gem 'bootstrap-sass'
+gem 'chronic'
+gem 'devise'
+gem 'devise_invitable'
+gem 'draper'
+gem 'figaro'
+gem 'font-awesome-rails'
+gem 'high_voltage'
+gem 'kaminari'
+gem 'momentjs-rails'
+gem 'newrelic_rpm'
+gem 'pg'
+gem 'rollbar'
+gem 'sendgrid'
+gem 'sentry-raven'
+gem 'simple_form'
+gem 'slim-rails'
+gem 'unicorn'
+gem 'unicorn-rails'
+
+group :development do
+  gem 'annotate'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'bullet'
+  gem 'guard-bundler'
+  gem 'guard-rails'
+  gem 'guard-rspec'
+  gem 'haml2slim'
+  gem 'html2haml'
+  gem 'hub', :require=>nil
+  gem 'letter_opener'
+  gem 'quiet_assets'
+  gem 'rack-mini-profiler', :require=>false
+  gem 'rails_apps_pages'
+  gem 'rails_apps_testing'
+  gem 'rails_layout'
+  gem 'rb-fchange', :require=>false
+  gem 'rb-fsevent', :require=>false
+  gem 'rb-inotify', :require=>false
+  gem 'spring-commands-rspec'
+end
+
+group :development, :test do
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'pry-rails'
+  gem 'pry-rescue'
+  gem 'rspec-rails'
+  gem 'rubocop'
+end
+
+group :production do
+  gem 'rails_12factor'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'selenium-webdriver'
+  gem 'shoulda-matchers', :require=>false
+  gem 'simplecov'
+end
+
